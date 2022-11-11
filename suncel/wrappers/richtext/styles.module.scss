@@ -1,0 +1,126 @@
+.richTextStyle {
+  a {
+    box-sizing: border-box;
+    color: #cb036f;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    line-height: 1.6em;
+    list-style-type: none;
+    position: relative;
+    text-decoration-color: rgb(43, 39, 39);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    touch-action: manipulation;
+    @media screen and (max-width: 510px) {
+      font-size: 1em;
+    }
+  }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #a20559;
+    color: #a20559;
+    transition: right 0.4s cubic-bezier(0, 0.5, 0, 2);
+  }
+  a:hover:after {
+    right: 0;
+  }
+}
+
+.customList {
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 12px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  li {
+    margin-top: 0.875rem; /* 14px */
+    margin-bottom: 0.875rem; /* 14px */
+    position: relative;
+    display: list-item;
+    padding-left: 15px;
+    line-height: 1.8em;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    color: #a20559;
+    font-weight: 400;
+    text-align: left;
+  }
+  li:before {
+    content: "";
+    background-color: #a20559;
+    border-radius: 9999px;
+    height: 0.5rem; /* 8px */
+    width: 0.5rem; /* 8px */
+    position: absolute;
+    top: 12px;
+    left: -2px;
+  }
+}
+
+h1.heading {
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  line-height: 1.2em;
+  color: #303a46;
+  -webkit-margin-after: 18px;
+  margin-block-end: 18px;
+  -webkit-margin-before: -140px;
+  margin-block-start: -140px;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  margin: 20px 0 18px;
+  padding-top: 20px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+h2.heading {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  line-height: 1.2em;
+  color: #303a46;
+  -webkit-margin-after: 18px;
+  margin-block-end: 18px;
+  -webkit-margin-before: -140px;
+  margin-block-start: -140px;
+  -webkit-margin-end: 0;
+  margin-inline-end: 0;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  margin: 20px 0 18px;
+  padding-top: 20px;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+h3.heading {
+  margin-bottom: 12px;
+  margin-top: 30px;
+  font-size: 1.3em;
+  color: #303a46;
+  font-weight: 600;
+}
+
+.pStyle {
+  line-height: 1.8em;
+  padding-bottom: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+  letter-spacing: 0.01em;
+  color: #253858;
+  font-weight: 400;
+}
