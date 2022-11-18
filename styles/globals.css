@@ -28,10 +28,27 @@ a {
   }
 } */
 
+
 .blackTextStroke{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(55 65 81);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: white;
+  }
+  body {
+    color: white;
+    background: #101827;
+  }
+  .blackTextStroke{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  }
 }
 
 

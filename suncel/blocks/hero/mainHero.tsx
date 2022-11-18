@@ -10,14 +10,14 @@ interface MainHeroProps {
 
 export const MainHero: SuncelBlock<MainHeroProps> = ({ tag, title, subTitle }) => {
   return (
-    <section className='py-10 mb-10 bg-gray-100 md:mb-16'>
+    <section className='py-10 mb-10 bg-gray-100 md:mb-16 dark:bg-gray-500'>
       <div className='container flex items-center justify-center mx-auto'>
         <div className=''>
           <Text
             slug='tag'
             value={tag}
             tagName='span'
-            className='font-semibold tracking-wide text-gray-600 uppercase md:-ml-20 '
+            className='font-semibold tracking-wide text-gray-600 uppercase md:-ml-20 dark:bg-text-white dark:text-gray-100'
           />
           <CustomRichText
             slug='title'
@@ -25,10 +25,11 @@ export const MainHero: SuncelBlock<MainHeroProps> = ({ tag, title, subTitle }) =
             allowedFeatures={[RichTextKey.MARK_HIGHLIGHT]}
             featuresHTMLAttributes={{
               [RichTextKey.ELEMENT_HEADING]: {
-                class: "text-[22vw] leading-[24vw] md:text-[14vw] md:leading-[15vw] font-bold text-gray-700 ",
+                class:
+                  "text-[22vw] leading-[24vw] md:text-[14vw] md:leading-[15vw] font-bold text-gray-700 dark:text-white",
               },
               [RichTextKey.MARK_HIGHLIGHT]: {
-                class: "bg-transparent text-white blackTextStroke ",
+                class: " bg-transparent text-white blackTextStroke dark:text-gray-800 dark:whiteTextStroke",
               },
             }}
           />
@@ -40,7 +41,7 @@ export const MainHero: SuncelBlock<MainHeroProps> = ({ tag, title, subTitle }) =
                 allowedFeatures={[]}
                 featuresHTMLAttributes={{
                   [RichTextKey.ELEMENT_HEADING]: {
-                    class: "text-2xl tracking-wide text-left font-thin text-gray-600",
+                    lass: "text-2xl font-thin tracking-wide text-left text-gray-600 dark:text-gray-100",
                   },
                 }}
               />
