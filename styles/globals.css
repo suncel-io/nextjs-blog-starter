@@ -28,4 +28,11 @@ a {
   }
 } */
 
+.blackTextStroke{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(55 65 81);
+}
+
+
 @tailwind utilities;

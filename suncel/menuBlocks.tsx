@@ -1,5 +1,9 @@
 import { MenuBlockSchema } from "@suncel/nextjs";
+import { BlogHero } from "./blocks/hero/blogHero";
+import { MainHero } from "./blocks/hero/mainHero";
 import { TitleAndSub } from "./blocks/hero/titleAndSub";
+import { ImageBlock } from "./blocks/imageBlock";
+import { RichTextBlock } from "./blocks/richTextBlock";
 
 export const menuBlocks: MenuBlockSchema[] = [
   {
@@ -13,6 +17,32 @@ export const menuBlocks: MenuBlockSchema[] = [
             component: TitleAndSub,
             name: "Title And Sub Hero",
             description: "A simple title and one optional subtitle",
+          },
+          {
+            component: MainHero,
+            name: MainHero?.suncel?.displayName,
+          },
+          {
+            component: BlogHero,
+            name: BlogHero?.suncel?.displayName,
+          },
+        ],
+      },
+      {
+        name: "Text",
+        variants: [
+          {
+            component: RichTextBlock,
+            name: RichTextBlock?.suncel?.displayName,
+          },
+        ],
+      },
+      {
+        name: "Media",
+        variants: [
+          {
+            component: ImageBlock,
+            name: ImageBlock?.suncel?.displayName,
           },
         ],
       },

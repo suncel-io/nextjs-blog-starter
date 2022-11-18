@@ -1,5 +1,6 @@
 import { GlobalSchema } from "@suncel/nextjs";
-import { AnnounceBarSchema } from "./announceBar";
+import { FooterGlobal } from "./footer";
+import { HeaderGlobal } from "./header";
 
 // Add your globals here
-export const globalsSchemas: GlobalSchema[] = [AnnounceBarSchema];
+export const globalsSchemas: GlobalSchema[] = [HeaderGlobal, FooterGlobal];

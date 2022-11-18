@@ -39,6 +39,12 @@ On top of that, you have a Block example and a wrapper of the rich text with som
 - Access the admin via /admin
 - Build your pages with the page builder
 
+### Header, Footer, Last Articles
+
+- Header: In your admin panel, create the Global Header, copy the ID of the global and replace in your code all the occurrences of REPLACE_BY_HEADER_GLOBAL_ID by your ID
+- Footer: In your admin panel, create the Global Footer, copy the ID of the global and replace in your code all the occurrences of REPLACE_BY_FOOTER_GLOBAL_ID by your ID
+- Last Articles: In your admin panel, in the pages section, create the blog folder that will contain all your articles, click on it, copy the ID of the folder from te url and replace in your code all the occurrences of REPLACE_BY_BLOG_FOLDER_ID by your ID
+
 ### **📧 Contact**
 
 Whether you'd like to discuss about this starter template or simply say "hello", I'd love to hear from you.
