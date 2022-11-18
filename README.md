@@ -2,7 +2,7 @@
     <img alt="Suncel" src="https://assets.suncel.io/61bf5e233c962a862faf209f/ryNwB-meta-suncel-general.png" width="300" />
 </p>
 <h1 align="center">
-  Suncel NextJS Starter
+  Suncel NextJS Blog Starter
 </h1>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
