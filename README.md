@@ -30,8 +30,8 @@ On top of that, you have a Block example and a wrapper of the rich text with som
 
 - After creating an account, head over to the project settings you created earlier.
 - Go to the API section, grab your Keys.
-- In your project rename the .env.example to .env
-- Insert your API Keys in the .env of your project.
+- At the root of the project, create a .env file
+- Insert your API Keys in the .env of your project (NEXT_PUBLIC_SUNCEL_KEY=... and SUNCEL_REVALIDATE_SECRET=...)
 
 ### Ready to go
 
