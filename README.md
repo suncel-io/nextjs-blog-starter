@@ -23,7 +23,7 @@ On top of that, you have a Block example and a wrapper of the rich text with som
 
 ### Account
 
-- Create your Suncel account [here](https://app.suncel.io/signup)
+- Create your Suncel account [here](https://app.suncel.io/signup) (you can create a free plan with no time limit)
 - Create a project
 
 ### API Keys
@@ -35,15 +35,18 @@ On top of that, you have a Block example and a wrapper of the rich text with som
 
 ### Ready to go
 
+- npm run dev, then access the admin via  /admin and login with the same id/pwd you have on app.suncel.io
+- In the left menu, go to Globals and create a global of type Header. Add a logo and a link (link+label).
+- Copy the id of the Header created in Globals (button "Copy Id") and replace in the code REPLACE_BY_HEADER_GLOBAL_ID by your header ID
+- Do the same for the footer with a Global type 'Footer', and in the code, replace REPLACE_BY_FOOTER_GLOBAL_ID by your footer ID
+
+### Create your first page and add Blocks
+- create a page and you can now add your blocks, save and publish your page
 - [Create your blocks](https://docs.suncel.io/developer/blocks/create-block) in react.
-- Access the admin via /admin
-- Build your pages with the page builder
+- Check our [Youtube Channel](https://www.youtube.com/@suncel) to see some examples of how to create Blocks
 
-### Header, Footer, Last Articles
-
-- Header: In your admin panel, create the Global Header, copy the ID of the global and replace in your code all the occurrences of REPLACE_BY_HEADER_GLOBAL_ID by your ID
-- Footer: In your admin panel, create the Global Footer, copy the ID of the global and replace in your code all the occurrences of REPLACE_BY_FOOTER_GLOBAL_ID by your ID
-- Last Articles: In your admin panel, in the pages section, create the blog folder that will contain all your articles, click on it, copy the ID of the folder from te url and replace in your code all the occurrences of REPLACE_BY_BLOG_FOLDER_ID by your ID
+### Last Articles
+- In your admin panel, in the pages section, create a **blog** folder that will contain all your articles, click on it, copy the ID of the folder from the url and replace in your code all the occurrences of REPLACE_BY_BLOG_FOLDER_ID by your ID
 
 ### **📧 Contact**
 
