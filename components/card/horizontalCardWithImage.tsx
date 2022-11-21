@@ -17,7 +17,7 @@ export const HorizontalCardWithImage: React.FC<ArticleCardProps> = ({
       <Image
         height={292}
         width={192}
-        className='object-cover w-full rounded-t-lg h-96 md:h-full md:w-96 md:rounded-none md:rounded-l-lg'
+        className='object-cover w-full rounded-tl-lg rounded-bl-lg h-96 md:h-full md:w-96 md:rounded-none md:rounded-l-lg'
         src={imageSrc}
         alt={imageAlt}
       />
