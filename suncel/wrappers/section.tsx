@@ -2,10 +2,10 @@ import clsx from "clsx";
 
 interface SectionProps {
   children: React.ReactNode;
-  variant: "default" | "blog";
+  variant?: "default" | "blog";
 }
 
-export const Section: React.FC<SectionProps> = ({ children, variant }) => {
+export const Section: React.FC<SectionProps> = ({ children, variant = "default" }) => {
   return (
     <div
       className={clsx({

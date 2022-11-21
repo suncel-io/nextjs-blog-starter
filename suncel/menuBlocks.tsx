@@ -1,5 +1,6 @@
 import { MenuBlockSchema } from "@suncel/nextjs";
 import { BlogHero } from "./blocks/hero/blogHero";
+import { CategoryHero } from "./blocks/hero/categoryHero";
 import { MainHero } from "./blocks/hero/mainHero";
 import { TitleAndSub } from "./blocks/hero/titleAndSub";
 import { ImageBlock } from "./blocks/imageBlock";
@@ -25,6 +26,10 @@ export const menuBlocks: MenuBlockSchema[] = [
           {
             component: BlogHero,
             name: BlogHero?.suncel?.displayName,
+          },
+          {
+            component: CategoryHero,
+            name: CategoryHero?.suncel?.displayName,
           },
         ],
       },
