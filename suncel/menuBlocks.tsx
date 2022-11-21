@@ -22,14 +22,17 @@ export const menuBlocks: MenuBlockSchema[] = [
           {
             component: MainHero,
             name: MainHero?.suncel?.displayName,
+            image: 'https://assets.suncel.io/635a70f68256da119616b1b5/zVFeC-mainHero.png',
           },
           {
             component: BlogHero,
             name: BlogHero?.suncel?.displayName,
+            image: 'https://assets.suncel.io/635a70f68256da119616b1b5/6ttPM-blogHeroAuthor.png'
           },
           {
             component: CategoryHero,
             name: CategoryHero?.suncel?.displayName,
+            image: 'https://assets.suncel.io/635a70f68256da119616b1b5/hoL0f-categoryHero.png'
           },
         ],
       },
@@ -39,6 +42,7 @@ export const menuBlocks: MenuBlockSchema[] = [
           {
             component: RichTextBlock,
             name: RichTextBlock?.suncel?.displayName,
+            image: 'https://assets.suncel.io/635a70f68256da119616b1b5/o7zWp-richText.png',
           },
         ],
       },
@@ -48,6 +52,7 @@ export const menuBlocks: MenuBlockSchema[] = [
           {
             component: ImageBlock,
             name: ImageBlock?.suncel?.displayName,
+            image: 'https://assets.suncel.io/635a70f68256da119616b1b5/YMpCF-simpleImage.png'
           },
         ],
       },
