@@ -5,7 +5,7 @@
   Suncel NextJS Blog Starter
 </h1>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). <br/>
 Access the [DEMO](https://blog-starter-one-sigma.vercel.app/).
 
 ## 📖 **Documentation**
@@ -31,8 +31,8 @@ On top of that, you have a Block example and a wrapper of the rich text with som
 
 - After creating an account, head over to the project settings you created earlier.
 - Go to the API section, grab your Keys.
-- At the root of the project, create a .env file
-- Insert your API Keys in the .env of your project (NEXT_PUBLIC_SUNCEL_KEY=... and SUNCEL_REVALIDATE_SECRET=...)
+- At the root of the project, rename the .env.example file by .env 
+- Insert your API Keys in the .env of your project (NEXT_PUBLIC_SUNCEL_KEY=... and SUNCEL_REVALIDATE_SECRET=...). You can find these keys on app.suncel.io (Project &rarr;  )
 
 ### Ready to go
 
