@@ -20,7 +20,7 @@ it will includes Tailwind CSS.
 
 On top of that, you have a Block example and a wrapper of the rich text with some style that you are free to modify.
 
-## 🛠️ **Suncel Setup**
+## 🛠️  **Suncel Setup**
 
 ### Account
 
