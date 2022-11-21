@@ -54,7 +54,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     folder_depth: 10,
     sort_by: "createdAt",
     order: "desc",
-    fields: ["properties", "path"],
+    fields: ["properties", "path"], // in order to optimize the request, we just fetch meta data and the link (path)
   });
 
   const { data: categoryPages } = await getPages({
@@ -63,8 +63,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     order: "desc",
     includes_folder: false,
     status: "Published",
-    content_type: "categoryPage",
-    // or regex on path
+    content_type: "categoryPage",     // or fetch pages using a regex using option "path"
     fields: ["properties", "path"],
   });
 

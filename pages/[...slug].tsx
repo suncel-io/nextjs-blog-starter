@@ -16,14 +16,14 @@ export default function Slug(props: any) {
 }
 
 Slug.getLayout = function getLayout(page: ReactElement) {
-  const { header, footer, relatedArticles, categoryArticles } = page?.props;
+  const { header, footer, relatedArticles, categoryArticles, isCategoryPage } = page?.props;
 
   return (
     <ContentWrapper>
       <Header {...header} />
       {page}
-      <RelatedArticles articles={relatedArticles} />
-      <CategoryArticles articles={categoryArticles} />
+      <RelatedArticles articles={relatedArticles} isCategoryPage={isCategoryPage} />
+      <CategoryArticles articles={categoryArticles} isCategoryPage={isCategoryPage} />
       <Footer {...footer} />
     </ContentWrapper>
   );
@@ -101,6 +101,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
           link: page.path,
           ...page.properties.metas?.sns.facebook,
         })) || [],
+      isCategoryPage: suncelProps?.page_settings?.categoryPage?.categoryName || false,
     },
     revalidate: 10,
   };

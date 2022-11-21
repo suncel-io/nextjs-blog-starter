@@ -5,13 +5,14 @@ import { ArticleCardProps } from "./lastArticles";
 
 interface RelatedArticlesProps {
   articles: ArticleCardProps[];
+  isCategoryPage: boolean;
 }
 
-export const RelatedArticles: React.FC<RelatedArticlesProps> = ({ articles }) => {
+export const RelatedArticles: React.FC<RelatedArticlesProps> = ({ articles, isCategoryPage }) => {
   const isAdmin = useIsAdmin();
 
   if (!articles || !Array.isArray(articles) || articles?.length == 0)
-    return isAdmin ? (
+    return isAdmin && !isCategoryPage ? (
       <div className='p-4 my-4 font-semibold text-center text-yellow-900 bg-yellow-100 border rounded-lg'>
         If you want to add related articles : go in <strong>Pages</strong> (right side panel), add <strong>Related Articles</strong>, and Save and Refresh to see updates on related articles.
       </div>
