@@ -19,10 +19,7 @@ RichTextBlock.suncel = {
   slug: "RichTextBlock",
   displayName: "RichText Block",
   defaultProps: {
-    richText: `<blockquote>
-      <p>Flowbite is just awesome. It contains tons of predesigned components and pages starting from
-          login screen to complex dashboard. Perfect choice for your next SaaS application.</p>
-  </blockquote>`,
+    richText: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae aperiam explicabo voluptatibus, rerum esse expedita a dicta ab sapiente nihil aliquid quis est similique nisi, excepturi recusandae consequuntur quidem`,
   },
   editor: {
     settings: [],
