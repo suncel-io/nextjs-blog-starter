@@ -101,7 +101,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
           link: page.path,
           ...page.properties.metas?.sns.facebook,
         })) || [],
-      isCategoryPage: suncelProps?.page_settings?.categoryPage?.categoryName || false,
+      isCategoryPage: suncelProps?.content_type == "categoryPage" || false,
     },
     revalidate: 10,
   };
