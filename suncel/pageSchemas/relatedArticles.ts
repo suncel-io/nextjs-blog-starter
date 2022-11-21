@@ -8,7 +8,7 @@ export const RelatedArticles: ContentTypeSchema = {
       type: "repeatable",
       slug: "articles",
       name: "Article",
-      pluralName: "Articles",
+      pluralName: "Related Articles",
       fields: [
         {
           type: "page",

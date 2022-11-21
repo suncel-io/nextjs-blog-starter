@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@suncel/nextjs": "~1.0.23",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@tiptap/extension-blockquote": "^2.0.0-beta.202",
     "clsx": "^1.2.1",
     "next": "13.0.3",

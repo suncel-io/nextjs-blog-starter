@@ -13,14 +13,14 @@ export const RelatedArticles: React.FC<RelatedArticlesProps> = ({ articles }) =>
   if (!articles || !Array.isArray(articles) || articles?.length == 0)
     return isAdmin ? (
       <div className='p-4 my-4 font-semibold text-center text-yellow-900 bg-yellow-100 border rounded-lg'>
-        Please save and refresh to see to related articles
+        If you want to add related articles : go in <strong>Pages</strong> (right side panel), add <strong>Related Articles</strong>, and Save and Refresh to see updates on related articles.
       </div>
     ) : null;
   return (
     <div className='max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6'>
       {isAdmin && (
         <div className='p-4 my-4 font-semibold text-center text-yellow-900 bg-yellow-100 border rounded-lg'>
-          Please save and refresh to see to related articles
+          If you want to add related articles : go in <strong>Pages</strong> (right side panel), add <strong>Related Articles</strong>, and Save and Refresh to see updates on related articles.
         </div>
       )}
       <div className='max-w-screen-md mx-auto mb-8 text-center lg:mb-12'>
