@@ -35,6 +35,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   if (!suncelProps) {
     return {
       notFound: true,
+      revalidate: 10,
     };
   }
 

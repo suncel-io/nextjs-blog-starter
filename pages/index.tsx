@@ -35,6 +35,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   if (!suncelProps) {
     return {
       notFound: true,
+      revalidate: 10,
     };
   }
 
@@ -49,7 +50,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
   const { data: lastArticles } = await getPages({
     folder: "REPLACE_BY_BLOG_FOLDER_ID",
-    limit: 10,
     status: "Published",
     folder_depth: 10,
     sort_by: "createdAt",
@@ -63,7 +63,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     order: "desc",
     includes_folder: false,
     status: "Published",
-    content_type: "categoryPage",     // or fetch pages using a regex using option "path"
+    content_type: "categoryPage", // or fetch pages using a regex using option "path"
     fields: ["properties", "path"],
   });
 
