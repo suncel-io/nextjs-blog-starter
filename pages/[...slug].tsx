@@ -8,6 +8,7 @@ import { getGlobal, getPage, getPages, Page } from "@suncel/nextjs/api";
 import { Footer } from "@/components/layouts/footer";
 import { RelatedArticles } from "@/components/layouts/relatedArticle";
 import { CategoryArticles } from "@/components/layouts/categoryArticles";
+import { suncelContextConfig } from "@/suncel/suncelContextConfig";
 
 export default function Slug(props: any) {
   if (!props?.suncel) return <div>Cannot load the page</div>;
@@ -30,7 +31,9 @@ Slug.getLayout = function getLayout(page: ReactElement) {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const suncelProps = await getSuncelStaticProps(ctx);
+  const suncelProps = await getSuncelStaticProps(ctx, {
+    context: suncelContextConfig,
+  });
 
   if (!suncelProps) {
     return {

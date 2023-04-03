@@ -1,6 +1,6 @@
 import React from "react";
 import { RichText, RichTextKey, RichTextProps } from "@suncel/nextjs/components";
-import classes from "./styles.module.scss";
+//import classes from "./styles.module.scss";
 import Blockquote from "@tiptap/extension-blockquote";
 import clsx from "clsx";
 import { FaQuoteRight } from "@react-icons/all-files/fa/FaQuoteRight";
